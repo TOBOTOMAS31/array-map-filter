@@ -27,6 +27,9 @@ Expected OUTPUT for this sample array:
 */
 
 function getStringsLength(strings) {
+  return strings.map(function (tab){
+    return tab + " contains " + tab.length.toString() + " characters";
+  })
 }
 
 // If you need, you can always visualize the result with a console.log.
