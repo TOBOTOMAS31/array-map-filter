@@ -43,6 +43,13 @@ Expected OUTPUT for this sample
 */
 
 function getFoodCategories(foods) {
+  return foods.map(function (tab) {
+    if (!tab.isVegetarian){
+      return tab.food + " is not suitable for vegetarians";
+    } else {
+      return tab.food + " is suitable for vegetarians";
+    }
+  });
 }
 
 
