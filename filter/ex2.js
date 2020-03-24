@@ -25,7 +25,10 @@ Expected OUTPUT for this sample:
 
 */
 
-function keepStarks(names) {
+function keepStarks(names){
+  return names.filter(function(el) {
+    return el.indexOf("Stark") !== -1;
+  });
 }
 
 // DON'T TOUCH THIS!
